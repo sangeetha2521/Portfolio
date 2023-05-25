@@ -3,7 +3,7 @@ import image from "./img1.jpg";
 
 export default function Profile() {
   return (
-    <div className="flex flex-wrap justify-center h-[60%] mt-8">
+    <div className="flex flex-wrap  justify-center h-[60%] mt-8">
       <div className="flex justify-center items-center  w-[20%] hover:transition-all">
         <div className="rounded-full bg-gray-200 shadow-md p-2  mb-8 ">
           <img
