@@ -1,27 +1,40 @@
 import React from "react";
-import image from "./img1.jpg";
+import image from "./7.jpg";
+import { Link } from "react-router-dom";
 
 export default function Profile() {
   return (
-    <div className="flex flex-wrap  justify-center h-[60%] mt-8">
-      <div className="flex justify-center items-center  w-[20%] hover:transition-all">
-        <div className="rounded-full bg-gray-200 shadow-md p-2  mb-8 ">
-          <img
-            src={image}
-            className=" flex rounded-full h-[40%] shadow-mdtransition-transform duration-300 transform hover:scale-105 cursor-pointer"
-          />
+    <div className="flex flex-col md:flex-row justify-betweeen md:mx-56 items-center min-h-screen">
+      <div className="md:w-[40%] mx-4">
+        <div className="flex justify-center items-center hover:transition-all">
+          <div className="rounded-full bg-gray-200 shadow-md p-2 mb-8">
+            <img
+              src={image}
+              className="flex rounded-full h-[40%] shadow-md transition-transform duration-300 transform hover:scale-105 cursor-pointer"
+              alt="Profile Image"
+            />
+          </div>
         </div>
       </div>
-      <div className="flex ml-20 p-10 w-[40%] font-poppins text-xl text-justify">
-        <p>
-          Hey, nice to meet you! I go by the name Sangeetha, and I'm a Software Engineer.
-          <p className="font-light text-sm pt-2">
-            <br></br>I've taken a self-taught approach to my development journey and I'm currently based in India 🇮🇳.
-            Over the years, I've delved into various technologies, gaining experience in both backend and frontend
-            domains. At the moment, I'm proudly serving as a Software Engineer at Konnectify. If you're interested in
-            learning more about me kindly check out my LinkedIn profile. Feel free to connect with me there!
+      <div className="md:w-[60%] mx-4">
+        <div className="flex justify-center items-center font-poppins font-semibold text-justify md:text-4xl lg:text-8xl">
+          <p className="text-center md:text-5xl">
+            Hello, I'm <br />a Software Engineer.
+            <p className="font-poppins font-light md:text-xl lg:text-2xl pt-2">
+              <br />
+              Fond of creating web application designs and bringing them to life using code & developing web designs.
+            </p>
+            <a
+              href="Resume-final.pdf"
+              download={"Resume-final.pdf"}
+              target={"_blank"}
+            >
+              <a className="mt-4 rounded-md hover:bg-primary-color text-sm px-4 py-2 bg-primary-color text-white">
+                Download Resume
+              </a>
+            </a>
           </p>
-        </p>
+        </div>
       </div>
     </div>
   );

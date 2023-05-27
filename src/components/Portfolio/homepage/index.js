@@ -5,9 +5,11 @@ import Projects from "./projects";
 import About from "./about";
 import Contact from "./contact";
 import Skils from "./skils/Skils";
+import Footer from "./footer/index";
 import { setDarkTheme } from "../../../reducers/slice";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import Services from "./services/indes";
 
 export default function HomePage() {
   const theme = useSelector((state) => state.portFolio.defaultTheme);
@@ -25,19 +27,29 @@ export default function HomePage() {
   useEffect(() => {
     setClassName(
       theme === "light"
-        ? " w-full h-full text-black text-sm h-full bg-gradient-to-r from-[#e7f3ff] to-[#ffffff]"
-        : "w-full h-full bg-black text-white"
+        ? "w-full  text-black text-sm bg-gradient-to-r from-[#e7f3ff] to-[#ffffff]"
+        : "w-full  bg-black text-white"
     );
   }, [theme]);
-  return (
-    <div className={className}>
-      <Header />
 
-      <Profile />
-      <About />
-      <Projects />
-      <Contact />
-      <Skils />
+  return (
+    <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col flex-grow">
+        <div className={className}>
+          <Header />
+          {/* Content */}
+          {/* <Profile /> */}
+          {/* <About /> */}
+          {/* <Projects /> */}
+          {/* <Contact /> */}
+          {/* <Skils /> */}
+          {/* <Services /> */}
+        </div>
+      </div>
+      <div className="footer">
+        {/* <Services /> */}
+        <Footer />
+      </div>
     </div>
   );
 }
