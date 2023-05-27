@@ -2,27 +2,28 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="flex flex-wrap justify-center h-[60%] mt-8 ">
-      <div className="flex ml-20 p-10 w-[40%] font-poppins text-xl text-justify">
-        <p className="font-poppins">
-          Sangeetha | Full-Stack Software Engineer.
-          <p className="font-light font-poppins text-sm pt-2">
-            <br></br> Passionate, creative, and driven, I'm Sangeetha, a full-stack software engineer from India. With
-            one year of experience, I bring a blend of design and technology to create exceptional software products.{" "}
-            <br></br>
-            <br></br>My expertise lies in JavaScript, HTML, and CSS, with a focus on React.js, Next.js, Node.js, and
-            Express.js. I possess a deep understanding of these frameworks and leverage them to craft visually appealing
-            and user-friendly applications. <br></br>
-            <br></br>Beyond coding, I love exploring diverse interests. Whether it's watching YouTube videos, immersing
-            myself in movies, or enjoying gaming sessions with friends, I believe in embracing life outside of work.
-            Fueling my curiosity, I actively engage in side projects and contribute to open-source software. <br></br>
-            <br></br>
-            These endeavors push me to learn new technologies and continuously enhance my skillset. I'm excited to
-            collaborate with like-minded individuals and teams on innovative projects.<br></br> <br></br>If you're
-            seeking a dedicated and creative software engineer, let's connect and create something extraordinary
-            together.
+    <div className="flex flex-wrap justify-center mx-10 my-24 pb-18 ">
+      <div className="flex flex-col md:flex-row ml-4 mr-4 p-4 md:w-3/4 lg:w-2/3 xl:w-1/2">
+        <div className="w-full">
+          <h2 className="font-poppins font-bold text-3xl mb-4 text-primary-color">About Me</h2>
+          <p className="font-bold md:text-4xl font-poppins text-sm text-justify">
+            Hey there! I'm Sangeetha, <br></br>
+            <p className="font-light md:text-sm text-justify md:mt-5">
+              A software engineer who knows how to make coding fun. With 1 year of internship experience and currently
+              working as a full stack developer at Konnectify, I'm passionate about creating impressive websites and
+              taking on freelancing projects.
+            </p>
           </p>
-        </p>
+          <p className="font-light font-poppins text-sm justify mt-2">
+            I love turning lines of code into captivating digital journeys. I bring a touch of magic to every project,
+            delivering visually stunning websites with an exceptional user experience in the digital world.
+          </p>
+          <p className="font-light font-poppins text-sm justify mt-2">
+            When I'm not coding, I indulge in my passions for music, photography, and travel, which inspire my
+            creativity and add that extra spark to my work. Let's create something extraordinary together! Explore my
+            portfolio and let's make waves in the digital world.
+          </p>
+        </div>
       </div>
     </div>
   );
