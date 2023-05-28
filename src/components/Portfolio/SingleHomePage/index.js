@@ -32,6 +32,8 @@ export default function SingleHomePage() {
     );
   }, [theme]);
 
+  
+  
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex flex-col flex-grow">
