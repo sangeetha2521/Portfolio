@@ -8,13 +8,17 @@ import Services from "./components/Portfolio/homepage/services/indes";
 import Skills from "./components/Portfolio/homepage/skils/Skils";
 import Portfolio from "./components/Portfolio";
 import Profile from "./components/Portfolio/homepage/Profile";
+import SingleHomePage from "./components/Portfolio/SingleHomePage";
+import SingleHomePageProfile from "./components/Portfolio/SingleHomePage/Profile";
+import SingleHomePageSkills from "./components/Portfolio/SingleHomePage/skils/Skils";
+import SingleHomePageServices from "./components/Portfolio/SingleHomePage/services/indes";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />}>
-          <Route path="/Home" element={<Profile/> }/>
+        <Route path="/" element={<SingleHomePage />}>
+          <Route path="/Home" index element={<><SingleHomePageProfile /><SingleHomePageSkills /><SingleHomePageServices/></>} />
           <Route path="Skills" element={<Skills />} />
           <Route path="Services" element={<Services />} />
           <Route path="Contact" element={<Contact />} />
