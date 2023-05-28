@@ -24,15 +24,16 @@ export default function Profile() {
               <br />
               Fond of creating web application designs and bringing them to life using code & developing web designs.
             </p>
-            <a
-              href="Resume-final.pdf"
-              download={"Resume-final.pdf"}
-              target={"_blank"}
-            >
-              <a className="mt-4 rounded-md hover:bg-primary-color text-sm px-4 py-2 bg-primary-color text-white">
+            <div className="flex justify-center mt-4">
+              <a
+                href="/static/Sangeetha/Resume-Sangeetha.pdf"
+                download={"/static/Sangeetha/Resume-Sangeetha.pdf"}
+                target={"_blank"}
+                className="rounded-md hover:bg-primary-color text-sm px-4 py-2 bg-primary-color text-white"
+              >
                 Download Resume
               </a>
-            </a>
+            </div>
           </p>
         </div>
       </div>

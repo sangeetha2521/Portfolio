@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`flex items-center  font-semibold font-poppins md:justify-between lg:justify-center xl:justify-center p-4 md:p-6 bg-gray-100`}
+        className={`flex items-center  font-semibold font-poppins md:justify-between lg:justify-center xl:justify-center p-4 md:p-6 bg-[#D3E0EA]`}
       >
         {/* Theme toggle button */}
         {/* <button className="flex ml-2 md:ml-10" onClick={onClickChangeTheme}>

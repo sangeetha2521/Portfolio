@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 py-2 lg:py-2 max-h-screen">
+    <footer className="bg-[#D3E0EA] py-2 lg:py-2 max-h-screen">
       <div className="container mx-auto text-center">
         <div className="flex flex-col items-center">
           <p className="font-bold mb-2">Let's talk</p>
