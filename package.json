@@ -1,7 +1,7 @@
 {
-  "homepage": "https://sangeetha2521.github.io/Portfolio",
-  "name": "Portfolio",
-  "version": "0.1.0",
+  "homepage": "http://sangeetha2521.github.io/Portfolio",
+  "name": "Sang_Portfolio",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
