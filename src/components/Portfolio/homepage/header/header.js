@@ -85,7 +85,7 @@ export default function Header() {
             {menu.map((item, index) => (
               <li key={index}>
                 <Link
-                  to={`/${item.key}`}
+                  to={`/Portfolio/${item.key}`}
                   className={`${activeItem === item.key ? "text-blue-500" : "text-primary-color hover:text-blue-500"}`}
                   onClick={() => handleItemClick(item.key)}
                 >
