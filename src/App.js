@@ -16,18 +16,18 @@ import { Navigate, HashRouter } from "react-router-dom";
 function App() {
   return (
     <HashRouter>
-      <Routes>
-        <Route path="/" element={<SingleHomePage />}>
-          <Route path="Home" index element={<><SingleHomePageProfile /><SingleHomePageSkills /></>} />
-          <Route path="Skills" element={<Skills />} />
-          {/* <Route path="Services" element={<Services />} /> */}
-          <Route path="Contact" element={<Contact />} />
-          <Route path="Projects" element={<Projects />} />
-          <Route path="About" element={<About />} />
-        </Route>
-        <Route path="*" element={<Navigate to="Home" replace={true} />} />
-      </Routes>
-      </HashRouter>
+    <Routes>
+      <Route path="/" element={<SingleHomePage />}>
+        <Route path="/" index element={<><SingleHomePageProfile /><SingleHomePageSkills /></>} />
+        <Route path="Skills" element={<Skills />} />
+        {/* <Route path="Services" element={<Services />} /> */}
+        <Route path="Contact" element={<Contact />} />
+        <Route path="Projects" element={<Projects />} />
+        <Route path="About" element={<About />} />
+      </Route>
+      <Route path="*" element={<Navigate to="/" replace={true} />} />
+    </Routes>
+  </HashRouter>
   );
 }
 
