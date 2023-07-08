@@ -11,7 +11,7 @@ export default function About() {
             <p className="font-light md:text-sm text-justify md:mt-5">
               👩‍💻 A software engineer who knows how to make coding fun. With 1 year of internship experience and
               currently working as a full stack developer at Konnectify, I'm passionate about creating impressive
-              websites and taking on freelancing projects.
+              websites.
             </p>
           </p>
           <p className="font-light font-poppins text-sm justify mt-2">
