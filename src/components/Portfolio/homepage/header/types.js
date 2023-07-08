@@ -7,10 +7,10 @@ export const menu = [
     key: "Skills",
     label: "Skills",
   },
-  {
-    key: "Services",
-    label: "Services",
-  },
+  // {
+  //   key: "Services",
+  //   label: "Services",
+  // },
   {
     key: "Projects",
     label: "Projects",
